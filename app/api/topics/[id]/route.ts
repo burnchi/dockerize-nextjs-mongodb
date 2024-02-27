@@ -26,7 +26,6 @@ export const GET = async (request: NextRequest, { params }: { params: { id: stri
   try {
 
     const { id } = params
-
     const data = await TopicModel.findById(id)
 
     return NextResponse.json(data, { status: 200 })

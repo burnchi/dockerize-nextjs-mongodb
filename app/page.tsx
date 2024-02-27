@@ -25,7 +25,6 @@ export default function Home() {
   }
 
 
-
   if (isLoading || !data) return <div>loading...</div>
   if (isError) return `Error: ${error.message}`
 

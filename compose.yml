@@ -1,3 +1,4 @@
+# production
 # services:
   # nextapp:
   #   container_name: nextapp
@@ -8,16 +9,21 @@
   #     - 3000:3000
   #   environment:
   #     - MONGO_URI=${MONGO_URI}
+      # - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL}
   #   depends_on:
   #     - mongo
   # mongo:
   #   image: mongo:7.0
   #   ports:
   #     - 27017:27017
-  #   volumes:
-  #     - ./mongodata:/data/db
+    # volumes:
+    #   - amazona:/data/db
+
+# volumes:
+#   amazona:
 
 #------------------------------------
+# development
 # specify the version of docker-compose
 version: '3.8'
 

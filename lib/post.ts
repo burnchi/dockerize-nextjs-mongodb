@@ -6,6 +6,7 @@ interface TopicsProps {
   title: string,
   describe: string
 }
+
 export async function fetchTopics() {
   const res = await fetch(`${apiUrl}/api/topics`)
   return res.json()
@@ -44,3 +45,4 @@ export async function deleteTopic(id: string) {
   });
   return response.json()
 }
+
